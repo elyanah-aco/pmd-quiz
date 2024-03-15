@@ -1,0 +1,1659 @@
+{
+    "all_questions": [
+        {
+            "question": "Do you like karaoke?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Jolly", "Bold"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Docile", "Timid"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "You're running a marathon, and at the start you fall flat on your face! What will you do?",
+            "choices": [
+                {
+                    "answer": "I'm not giving up yet!",
+                    "traits": ["Hardy", "Brave"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Just give up...",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Shout, 'START OVER!'",
+                    "traits": ["Rash", "Bold"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "You're at a movie theater. What are you there to see?",
+            "choices": [
+                {
+                    "answer": "An action movie!",
+                    "traits": ["Impish", "Sassy"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "A drama.",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "A romantic movie.",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You've been asked to do a difficult task. What will you do?",
+            "choices": [
+                {
+                    "answer": "Do it myself.",
+                    "traits": ["Hardy", "Brave"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Ask someone to help.",
+                    "traits": ["Docile"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Make someone else do it!",
+                    "traits": ["Sassy", "Bold"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Are you truly sincere when you apologize?",
+            "choices": [
+                {
+                    "answer": "Of course.",
+                    "traits": ["Docile", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Uh, that's not easy to admit!",
+                    "traits": ["Timid", "Lonely"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "Do you think you have good study habits?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Docile"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Naive", "Rash"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Well, I never lose at sports!",
+                    "traits": ["Impish"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "There's a rumor around about a ghost haunting the school bathrooms! What do you do?",
+            "choices": [
+                {
+                    "answer": "Scary...bathrooms!",
+                    "traits": ["Docile", "Timid"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Go in anyways.",
+                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "points": [4, 2, 2]
+                }
+            ]
+        },
+        {
+            "question": "Everyone's sharing a dessert, and there's an extra piece. What do you do?",
+            "choices": [
+                {
+                    "answer": "Don't tell anyone.",
+                    "traits": ["Timid", "Bold"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Let everyone know.",
+                    "traits": ["Docile", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "First come, first served!",
+                    "traits": ["Impish"],
+                    "points": [4]
+                }
+            ]
+        },       
+        {
+            "question": "How are your mornings?",
+            "choices": [
+                {
+                    "answer": "Always in a rush!",
+                    "traits": ["Brave", "Impish"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Always perfect.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                },
+                {
+                    "answer": "They're okay.",
+                    "traits": ["Docile", "Timid"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Everyone around you is laughing hard at something you think is pretty boring. What do you do?",
+            "choices": [
+                {
+                    "answer": "Mmm, nothing really.",
+                    "traits": ["Brave", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Laugh along.",
+                    "traits": ["Timid", "Lonely"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "It depends on the situation.",
+                    "traits": ["Quirky", "Quiet"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "Do you like lively parties?",
+            "choices": [
+                {
+                    "answer": "Yes, woohoo!",
+                    "traits": ["Jolly", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No...",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "The people at the next table are singing for someone's birthday. What do you do?",
+            "choices": [
+                {
+                    "answer": "Stay on the sidelines.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Sing along!",
+                    "traits": ["Jolly", "Naive"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Walk away.",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "You're in a completely silent assembly when you suddenly hear someone fart! How do you react?",
+            "choices": [
+                {
+                    "answer": "Roll on the floor laughing!",
+                    "traits": ["Jolly", "Naive"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Try to let it go by...",
+                    "traits": ["Docile", "Impish"],
+                    "points": [2, 2]
+                },
+                {
+                    "answer": "Who was that?!",
+                    "traits": ["Brave"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Where do your prefer to play?",
+            "choices": [
+                {
+                    "answer": "Outside.",
+                    "traits": ["Impish", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Inside.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You're hiking up a mountain when you reach diverging paths. Which kind do you take?",
+            "choices": [
+                {
+                    "answer": "Narrow",
+                    "traits": ["Impish", "Naive"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Wide.",
+                    "traits": ["Timid", "Quirky"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "You see a big and comfortable bed. Your first reaction is to...",
+            "choices": [
+                {
+                    "answer": "Jump on it!",
+                    "traits": ["Hasty", "Sassy"],
+                    "points": [2, 2]
+                },
+                {
+                    "answer": "Belly flop!",
+                    "traits": ["Impish"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Lie down and curl up.",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You discover a beat-up-looking treasure chest in some ruins. What do you do?",
+            "choices": [
+                {
+                    "answer": "Open it!",
+                    "traits": ["Brave", "Impish", "Hasty", "Rash"],
+                    "points": [4, 4, 4, 2]
+                },
+                {
+                    "answer": "Get help opening it.",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Your friend takes a spectacular fall! What do you do?",
+            "choices": [
+                {
+                    "answer": "Help my friend up!",
+                    "traits": ["Brave", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Laugh! It's way too funny!",
+                    "traits": ["Impish", "Naive", "Rash"],
+                    "points": [4, 4, 2]
+                }
+            ]
+        },
+        {
+            "question": "You're daydreaming...when your friend sprays you with water! What do you do?",
+            "choices": [
+                {
+                    "answer": "Get mad!",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Get sad.",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Woo-hoo, water fight!",
+                    "traits": ["Jolly", "Impish", "Naive"],
+                    "points": [4, 4, 4]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever thought that if you dug in your backyard you could find buried treasure?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Naive"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever told a joke that just completely fell flat?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Impish", "Naive"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Your friend has made a meal that tastes terrible. They ask, 'How is it?' You say...",
+            "choices": [
+                {
+                    "answer": "'Terrible.'",
+                    "traits": ["Brave", "Quiet"],
+                    "points": [2, 2]
+                },
+                {
+                    "answer": "Just smile.",
+                    "traits": ["Calm", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "'Uh...it's good.'",
+                    "traits": ["Timid", "Rash"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "You run into a new person that you haven't talked to very much before. What do you do?",
+            "choices": [
+                {
+                    "answer": "Make small talk.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Say nothing.",
+                    "traits": ["Quirky"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Make an excuse to get away.",
+                    "traits": ["Timid"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever realized you were hogging the conversation?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hasty", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Docile", "Quiet"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "You see a switch. What do you do?",
+            "choices": [
+                {
+                    "answer": "Flip it!",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Leave it be.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You find something at a great bargain price! What do you do?",
+            "choices": [
+                {
+                    "answer": "Buy it right away!",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Think whether you need it.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Try to haggle to a lower price.",
+                    "traits": ["Bold"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You're packing your friend's snacks for a picnic when you get hungry. What do you do?",
+            "choices": [
+                {
+                    "answer": "Eat just a tiny bit.",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Hold myself back and finish packing.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                },
+                {
+                    "answer": "What snacks? You mean the ones I just ate?",
+                    "traits": ["Rash"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you want to be taller someday?",
+            "choices": [
+                {
+                    "answer": "Totally!",
+                    "traits": ["Sassy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Of course not.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you think it's important to always aim to be the best?",
+            "choices": [
+                {
+                    "answer": "Of course!",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm", "Quirky"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever looked at your reflection in a mirror and thought, 'What a cool person'?",
+            "choices": [
+                {
+                    "answer": "Certainly!",
+                    "traits": ["Jolly", "Naive", "Sassy"],
+                    "points": [2, 2, 4]
+                },
+                {
+                    "answer": "Not really...",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "If you saw someone doing something bad, could you scold them?",
+            "choices": [
+                {
+                    "answer": "Of course.",
+                    "traits": ["Brave", "Sassy", "Bold"],
+                    "points": [4, 4, 2]
+                },
+                {
+                    "answer": "Not really.",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you prefer to be busy or to have a lot of free time?",
+            "choices": [
+                {
+                    "answer": "Being busy.",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Having free time.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                },
+                {
+                    "answer": "In between.",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You notice that something you bought for full price yesterday is marked down to half price today! How do you feel?",
+            "choices": [
+                {
+                    "answer": "Heartbroken...",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Aaargh!",
+                    "traits": ["Docile"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Ugh, bad timing I guess...",
+                    "traits": ["Calm", "Bold"],
+                    "points": [4, 4]
+                }
+            ]
+        },
+        {
+            "question": "You're about to buy a popular game when someone else gets the last copy! How do you feel?",
+            "choices": [
+                {
+                    "answer": "Nothing, it happens.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Annoyed. I was here first!",
+                    "traits": ["Jolly", "Relaxed"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "I shed a few tears...",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You've just stuffed yourself with a good meal when a great dessert arrives. What do you do?",
+            "choices": [
+                {
+                    "answer": "Eat it. Who cares if I'm full?",
+                    "traits": ["Hasty", "Rash"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Turn it down, it's too fattening!",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Yum, dessert's the best!",
+                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "points": [4, 2, 4]
+                }
+            ]
+        },
+        {
+            "question": "You have a really important test tomorrow! What do you do?",
+            "choices": [
+                {
+                    "answer": "Study all night long.",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Wing it! It'll be fine!",
+                    "traits": ["Relaxed"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Test?! I think I have a fever...",
+                    "traits": ["Naive"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Your friend is running a little late to meet you. Is that OK?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Relaxed", "Bold"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Not at all!",
+                    "traits": ["Hasty", "Lonely"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Do you think that, no matter what, life goes on?",
+            "choices": [
+                {
+                    "answer": "All the time!",
+                    "traits": ["Jolly", "Relaxed"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Never.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "The phone's ringing! What do you do?",
+            "choices": [
+                {
+                    "answer": "Answer right away!",
+                    "traits": ["Hasty", "Lonely"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Wait a bit before answering.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Ignore it and let it ring.",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Your friends seem to be making plans to hang out, just out of earshot. You think...",
+            "choices": [
+                {
+                    "answer": "I want to go too!",
+                    "traits": ["Naive"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No big deal.",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Will they invite me?",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you want to be famous?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Relaxed"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever forgotten you bought something and bought another one?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hasty", "Quirky", "Rash"],
+                    "points": [2, 4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Once you've decided something, do you see it through to the end?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Hasty", "Quirky"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever said 'nice to meet you' to someone you've met previously?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Quirky", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you think it's important to be fashionably late?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Quiet", "Bold"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Brave"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I don't know?",
+                    "traits": ["Docile"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You've won big on a raffle ticket! You say...",
+            "choices": [
+                {
+                    "answer": "Woo-hoo!",
+                    "traits": ["Jolly", "Naive"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "I can't believe it...",
+                    "traits": ["Timid"],
+                    "points": [2]
+                },
+                {
+                    "answer": "This is my little secret.",
+                    "traits": ["Quiet"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Your friend suddenly won't listen to you, when everything was fine yesterday. What happened?",
+            "choices": [
+                {
+                    "answer": "Maybe they're sick.",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "They're lost in thought.",
+                    "traits": ["Quiet"],
+                    "points": [4]
+                },
+                {
+                    "answer": "What?! Why?!",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You take off your shoes to realize your socks are two different colors! What do you do?",
+            "choices": [
+                {
+                    "answer": "Get embarassed!",
+                    "traits": ["Docile"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Again?!",
+                    "traits": ["Rash"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Ha, I meant to do that!",
+                    "traits": ["Jolly"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You fail miserably! Everyone found out, and they're disappointed in you... What do you do?",
+            "choices": [
+                {
+                    "answer": "Try and hide...",
+                    "traits": ["Timid"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Think of an excuse.",
+                    "traits": ["Naive", "Sassy"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Drop down and play sick!",
+                    "traits": ["Rash"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever blurted something out without thinking about the consequences first?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Lonely", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You're in a meeting when you realize that you really have to go to the restroom! What do you do?",
+            "choices": [
+                {
+                    "answer": "Ask for permission to leave.",
+                    "traits": ["Brave", "Bold"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Sneak out.",
+                    "traits": ["Hasty"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Hold on until the meeting ends!",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Your friend offers to treat you to dinner. What do you say?",
+            "choices": [
+                {
+                    "answer": "Sure, I'll be there!",
+                    "traits": ["Bold"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No, allow me.",
+                    "traits": ["Jolly"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Thanks...",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You see a cake that is past its expiration date, but only by one day. What do you do?",
+            "choices": [
+                {
+                    "answer": "Not a problem! Chow time!",
+                    "traits": ["Brave", "Relaxed"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Think about it, then decide.",
+                    "traits": ["Timid"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Get someone to try it first.",
+                    "traits": ["Bold"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You're eating at a very fancy restaurant. Which course do you select?",
+            "choices": [
+                {
+                    "answer": "Seared steak.",
+                    "traits": ["Impish", "Naive"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Healthy fish.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Who cares? It's all good!",
+                    "traits": ["Bold"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You're in the final mile of a marathon, but the last stretch is exhausting! What will you do?",
+            "choices": [
+                {
+                    "answer": "Hang in there and finish!",
+                    "traits": ["Hardy", "Brave"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Just walk it out.",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Find a shortcut.",
+                    "traits": ["Rash", "Bold"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Would you ever consider sticking to a plan to do ten sit-ups a day?",
+            "choices": [
+                {
+                    "answer": "Yes! That's easy!",
+                    "traits": ["Impish", "Sassy"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Yes, it's hard work though.",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No! Why would I do that?!",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You have to move a heavy suitcase. What will you do?",
+            "choices": [
+                {
+                    "answer": "Carry it by myself.",
+                    "traits": ["Hardy", "Brave"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Ask someone to help.",
+                    "traits": ["Docile"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Make someone else do it.",
+                    "traits": ["Sassy", "Bold"],
+                    "points": [4, 4]
+                }
+            ]
+        },
+        {
+            "question": "If you don't know something, do you come clean and admit it?",
+            "choices": [
+                {
+                    "answer": "Of course.",
+                    "traits": ["Docile", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No, that's not easy to admit.",
+                    "traits": ["Timid", "Lonely"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "A fortune-teller says that you have a bad future ahead of you. How do you react?",
+            "choices": [
+                {
+                    "answer": "Worry about it...",
+                    "traits": ["Docile", "Timid"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Forget about it.",
+                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "points": [4, 2, 2]
+                }
+            ]
+        },
+        {
+            "question": "You hear a rumor that might make you rich! What do you do?",
+            "choices": [
+                {
+                    "answer": "Keep it all to myself.",
+                    "traits": ["Timid", "Bold"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Share it with friends.",
+                    "traits": ["Docile", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Spread a different rumor!",
+                    "traits": ["Impish"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you state your opinion even when it's not what everyone else thinks?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Brave", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Timid", "Lonely"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "It depends on the situation.",
+                    "traits": ["Quirky", "Quiet"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "You're on a stroll when a TV crew pounces on you for an interview. What do you do?",
+            "choices": [
+                {
+                    "answer": "Run away! How embarrasing.",
+                    "traits": ["Timid"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Answer questions properly.",
+                    "traits": ["Brave", "Sassy"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Ham it up! I'm on TV, woohoo!",
+                    "traits": ["Naive", "Bold"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "You see a parade coming down the street. What do you do?",
+            "choices": [
+                {
+                    "answer": "Stay on the sidelines.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Join the parade!",
+                    "traits": ["Jolly", "Naive"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Walk away.",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "Your friend tells a joke that's horribly corny! How do you react?",
+            "choices": [
+                {
+                    "answer": "Roll on the floor laughing!",
+                    "traits": ["Jolly", "Naive"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Just let it go by...",
+                    "traits": ["Docile", "Impish"],
+                    "points": [2, 2]
+                },
+                {
+                    "answer": "Slap my forehead and groan.",
+                    "traits": ["Brave"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You feel a burst of happiness! How about expressing it with a little dance?",
+            "choices": [
+                {
+                    "answer": "Sure!",
+                    "traits": ["Jolly", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No, I wouldn't!",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Can you strike up conversations with new people easily?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Jolly", "Bold"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Docile", "Timid"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "Do you get injured a lot?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Impish", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "What do you think of jungle exploration?",
+            "choices": [
+                {
+                    "answer": "Sounds fun!",
+                    "traits": ["Impish", "Naive"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Nah, not interested.",
+                    "traits": ["Timid", "Quirky"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "You discover a secret passage in a basement. What do you do?",
+            "choices": [
+                {
+                    "answer": "Go through it!",
+                    "traits": ["Brave", "Impish", "Hasty", "Rash"],
+                    "points": [4, 4, 4, 2]
+                },
+                {
+                    "answer": "Stay away from it.",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever wanted to communicate with aliens from another planet?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Naive"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever upset a friend when you were just kidding around?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Impish", "Naive"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You think you hear someone call your name. But no one's around...so what was it?",
+            "choices": [
+                {
+                    "answer": "Probably just my imagination.",
+                    "traits": ["Relaxed"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Someone fooling around.",
+                    "traits": ["Naive", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "Ooo, it was a ghost!",
+                    "traits": ["Timid"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you find yourself jumping to the wrong conclusion a lot of the time?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hasty", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Docile", "Quiet"],
+                    "points": [2, 2]
+                }
+            ]
+        },
+        {
+            "question": "Are you a rebel at heart?",
+            "choices": [
+                {
+                    "answer": "Totally!",
+                    "traits": ["Sassy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Of course not.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "When walking in a group, do you tend to be the one at the front?",
+            "choices": [
+                {
+                    "answer": "Of course!",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm", "Quirky"],
+                    "points": [4, 2]
+                }
+            ]
+        },
+        {
+            "question": "Do you think that you might be a genius?",
+            "choices": [
+                {
+                    "answer": "Certainly!",
+                    "traits": ["Jolly", "Naive", "Sassy"],
+                    "points": [2, 2, 4]
+                },
+                {
+                    "answer": "Well, not really...",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Are you a city person or a country person?",
+            "choices": [
+                {
+                    "answer": "I like the city!",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "I like the country!",
+                    "traits": ["Calm"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I like them both!",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You're about to take the last cookie when your friend wolfs it down! What do you do?",
+            "choices": [
+                {
+                    "answer": "Whatever, it's just a cookie.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I unleash my cookie fury!",
+                    "traits": ["Jolly", "Relaxed"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "I weep for my lost cookie.",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You don't get bothered by noise and ruckus nearby, do you?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Relaxed", "Bold"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Not at all!",
+                    "traits": ["Hasty", "Lonely"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Do you find yourself humming or singing often?",
+            "choices": [
+                {
+                    "answer": "All the time!",
+                    "traits": ["Jolly", "Relaxed"],
+                    "points": [2, 4]
+                },
+                {
+                    "answer": "Never.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you like being the center of attention?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Sassy", "Lonely"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Relaxed"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You're about to take the last cookie when your friend wolfs it down! What do you do?",
+            "choices": [
+                {
+                    "answer": "Whatever, it's just a cookie.",
+                    "traits": ["Calm"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I unleash my cookie fury!",
+                    "traits": ["Jolly", "Relaxed"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "I weep for my lost cookie.",
+                    "traits": ["Lonely"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you have lots of stuff you bought, thinking it was all cool, but don't use anymore?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hasty", "Quirky", "Rash"],
+                    "points": [2, 4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Quiet"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you had any hobbies for a long time?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Hasty", "Quirky"],
+                    "points": [2, 4]
+                }
+            ]
+        },
+        {
+            "question": "Do you often cancel plans to meet others at the last second?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Quirky", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Calm"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you like to do things according to plan?",
+            "choices": [
+                {
+                    "answer": "Of course!",
+                    "traits": ["Hardy"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I'm not good at planning.",
+                    "traits": ["Quirky", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Plans? Who needs plans?",
+                    "traits": ["Relaxed"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you think that lies are sometimes necessary?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Quiet", "Bold"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Brave"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I don't know...",
+                    "traits": ["Docile"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Your friend is crying right in front of you! What made that happen?",
+            "choices": [
+                {
+                    "answer": "Someone bullied my friend.",
+                    "traits": ["Hasty"],
+                    "points": [4]
+                },
+                {
+                    "answer": "My friend fell down, no doubt!",
+                    "traits": ["Quiet"],
+                    "points": [4]
+                },
+                {
+                    "answer": "I wonder if it's my fault?",
+                    "traits": ["Timid"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Your friend says your shirt is inside out. What do you do?",
+            "choices": [
+                {
+                    "answer": "Get embarassed!",
+                    "traits": ["Docile"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Laugh out loud!",
+                    "traits": ["Rash"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Say it's the latest fashion!",
+                    "traits": ["Jolly"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "Do you think that anything goes when it comes to winning?",
+            "choices": [
+                {
+                    "answer": "Of course!",
+                    "traits": ["Sassy", "Quiet"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No way!",
+                    "traits": ["Brave"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Do you often forget to lock the door when you go out?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Rash", "Bold"],
+                    "points": [4, 2]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "Have you ever accidentally revealed a personal secret that someone shared with you?",
+            "choices": [
+                {
+                    "answer": "Yes.",
+                    "traits": ["Lonely", "Rash"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "No.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                }
+            ]
+        },
+        {
+            "question": "You're in a play with friends. What kind of role do you prefer?",
+            "choices": [
+                {
+                    "answer": "Starring role!",
+                    "traits": ["Bold"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Supporting role.",
+                    "traits": ["Jolly"],
+                    "points": [4]
+                },
+                {
+                    "answer": "Just an extra.",
+                    "traits": ["Quirky"],
+                    "points": [4]
+                }
+            ]
+        },
+        {
+            "question": "You attend a fine dinner at a friend's house. How do you behave?",
+            "choices": [
+                {
+                    "answer": "Devour the food heartily!",
+                    "traits": ["Impish", "Naive"],
+                    "points": [4, 4]
+                },
+                {
+                    "answer": "Enjoy the meal in polite moderation.",
+                    "traits": ["Hardy"],
+                    "points": [2]
+                },
+                {
+                    "answer": "Ask to take leftovers home!",
+                    "traits": ["Bold"],
+                    "points": [4]
+                }
+            ]
+        }
+    ]
+}
