@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-NUMBER_OF_QUESTIONS = 5
+NUMBER_OF_QUESTIONS = 10
 POKEMON_CHOICES: dict[str: list[str]] = {
     "Bold": ["Squirtle", "Turtwig"],
     "Brave": ["Charmander", "Pikachu"],
