@@ -5,32 +5,32 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Jolly", "Bold"],
+                    "personalities": ["Jolly", "Bold"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Docile", "Timid"],
+                    "personalities": ["Docile", "Timid"],
                     "points": [2, 2]
                 }
             ]
         },
         {
-            "question": "You're running a marathon, and at the start you fall flat on your face! What will you do?",
+            "question": "You're running a marathon, and at the start you fall flat on your face!\nWhat will you do?",
             "choices": [
                 {
                     "answer": "I'm not giving up yet!",
-                    "traits": ["Hardy", "Brave"],
+                    "personalities": ["Hardy", "Brave"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Just give up...",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 },
                 {
                     "answer": "Shout, 'START OVER!'",
-                    "traits": ["Rash", "Bold"],
+                    "personalities": ["Rash", "Bold"],
                     "points": [2, 4]
                 }
             ]
@@ -40,17 +40,17 @@
             "choices": [
                 {
                     "answer": "An action movie!",
-                    "traits": ["Impish", "Sassy"],
+                    "personalities": ["Impish", "Sassy"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "A drama.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "A romantic movie.",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
@@ -60,17 +60,17 @@
             "choices": [
                 {
                     "answer": "Do it myself.",
-                    "traits": ["Hardy", "Brave"],
+                    "personalities": ["Hardy", "Brave"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Ask someone to help.",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
                     "answer": "Make someone else do it!",
-                    "traits": ["Sassy", "Bold"],
+                    "personalities": ["Sassy", "Bold"],
                     "points": [2, 4]
                 }
             ]
@@ -80,12 +80,12 @@
             "choices": [
                 {
                     "answer": "Of course.",
-                    "traits": ["Docile", "Bold"],
+                    "personalities": ["Docile", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Uh, that's not easy to admit!",
-                    "traits": ["Timid", "Lonely"],
+                    "personalities": ["Timid", "Lonely"],
                     "points": [4, 2]
                 }
             ]
@@ -95,52 +95,52 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Naive", "Rash"],
+                    "personalities": ["Naive", "Rash"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Well, I never lose at sports!",
-                    "traits": ["Impish"],
+                    "personalities": ["Impish"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "There's a rumor around about a ghost haunting the school bathrooms! What do you do?",
+            "question": "There's a rumor around about a ghost haunting the school bathrooms!\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Scary...bathrooms!",
-                    "traits": ["Docile", "Timid"],
+                    "personalities": ["Docile", "Timid"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Go in anyways.",
-                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "personalities": ["Jolly", "Relaxed", "Bold"],
                     "points": [4, 2, 2]
                 }
             ]
         },
         {
-            "question": "Everyone's sharing a dessert, and there's an extra piece. What do you do?",
+            "question": "Everyone's sharing a dessert, and there's an extra piece.\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Don't tell anyone.",
-                    "traits": ["Timid", "Bold"],
+                    "personalities": ["Timid", "Bold"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Let everyone know.",
-                    "traits": ["Docile", "Rash"],
+                    "personalities": ["Docile", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "First come, first served!",
-                    "traits": ["Impish"],
+                    "personalities": ["Impish"],
                     "points": [4]
                 }
             ]
@@ -150,37 +150,37 @@
             "choices": [
                 {
                     "answer": "Always in a rush!",
-                    "traits": ["Brave", "Impish"],
+                    "personalities": ["Brave", "Impish"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Always perfect.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 },
                 {
                     "answer": "They're okay.",
-                    "traits": ["Docile", "Timid"],
+                    "personalities": ["Docile", "Timid"],
                     "points": [2, 4]
                 }
             ]
         },
         {
-            "question": "Everyone around you is laughing hard at something you think is pretty boring. What do you do?",
+            "question": "Everyone around you is laughing hard\nat something you think is pretty boring. What do you do?",
             "choices": [
                 {
                     "answer": "Mmm, nothing really.",
-                    "traits": ["Brave", "Bold"],
+                    "personalities": ["Brave", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Laugh along.",
-                    "traits": ["Timid", "Lonely"],
+                    "personalities": ["Timid", "Lonely"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "It depends on the situation.",
-                    "traits": ["Quirky", "Quiet"],
+                    "personalities": ["Quirky", "Quiet"],
                     "points": [2, 2]
                 }
             ]
@@ -190,52 +190,52 @@
             "choices": [
                 {
                     "answer": "Yes, woohoo!",
-                    "traits": ["Jolly", "Lonely"],
+                    "personalities": ["Jolly", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No...",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "The people at the next table are singing for someone's birthday. What do you do?",
+            "question": "The people at the next table are singing for someone's birthday.\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Stay on the sidelines.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 },
                 {
                     "answer": "Sing along!",
-                    "traits": ["Jolly", "Naive"],
+                    "personalities": ["Jolly", "Naive"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Walk away.",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 2]
                 }
             ]
         },
         {
-            "question": "You're in a completely silent assembly when you suddenly hear someone fart! How do you react?",
+            "question": "You're in a completely silent assembly when\nyou suddenly hear someone fart! How do you react?",
             "choices": [
                 {
                     "answer": "Roll on the floor laughing!",
-                    "traits": ["Jolly", "Naive"],
+                    "personalities": ["Jolly", "Naive"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Try to let it go by...",
-                    "traits": ["Docile", "Impish"],
+                    "personalities": ["Docile", "Impish"],
                     "points": [2, 2]
                 },
                 {
                     "answer": "Who was that?!",
-                    "traits": ["Brave"],
+                    "personalities": ["Brave"],
                     "points": [4]
                 }
             ]
@@ -245,27 +245,27 @@
             "choices": [
                 {
                     "answer": "Outside.",
-                    "traits": ["Impish", "Rash"],
+                    "personalities": ["Impish", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Inside.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "You're hiking up a mountain when you reach diverging paths. Which kind do you take?",
+            "question": "You're hiking up a mountain when you reach diverging paths.\nWhich kind do you take?",
             "choices": [
                 {
                     "answer": "Narrow",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Wide.",
-                    "traits": ["Timid", "Quirky"],
+                    "personalities": ["Timid", "Quirky"],
                     "points": [2, 4]
                 }
             ]
@@ -275,32 +275,32 @@
             "choices": [
                 {
                     "answer": "Jump on it!",
-                    "traits": ["Hasty", "Sassy"],
+                    "personalities": ["Hasty", "Sassy"],
                     "points": [2, 2]
                 },
                 {
                     "answer": "Belly flop!",
-                    "traits": ["Impish"],
+                    "personalities": ["Impish"],
                     "points": [4]
                 },
                 {
                     "answer": "Lie down and curl up.",
-                    "traits": ["Lonely"],
+                    "personalities": ["Lonely"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You discover a beat-up-looking treasure chest in some ruins. What do you do?",
+            "question": "You discover a beat-up-looking treasure chest in some ruins.\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Open it!",
-                    "traits": ["Brave", "Impish", "Hasty", "Rash"],
+                    "personalities": ["Brave", "Impish", "Hasty", "Rash"],
                     "points": [4, 4, 4, 2]
                 },
                 {
                     "answer": "Get help opening it.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -310,47 +310,47 @@
             "choices": [
                 {
                     "answer": "Help my friend up!",
-                    "traits": ["Brave", "Lonely"],
+                    "personalities": ["Brave", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Laugh! It's way too funny!",
-                    "traits": ["Impish", "Naive", "Rash"],
+                    "personalities": ["Impish", "Naive", "Rash"],
                     "points": [4, 4, 2]
                 }
             ]
         },
         {
-            "question": "You're daydreaming...when your friend sprays you with water! What do you do?",
+            "question": "You're daydreaming...when your friend sprays you with water!\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Get mad!",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "Get sad.",
-                    "traits": ["Lonely"],
+                    "personalities": ["Lonely"],
                     "points": [4]
                 },
                 {
                     "answer": "Woo-hoo, water fight!",
-                    "traits": ["Jolly", "Impish", "Naive"],
+                    "personalities": ["Jolly", "Impish", "Naive"],
                     "points": [4, 4, 4]
                 }
             ]
         },
         {
-            "question": "Have you ever thought that if you dug in your backyard you could find buried treasure?",
+            "question": "Have you ever thought that if you dug in your backyard\nyou could find buried treasure?",
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Naive"],
+                    "personalities": ["Naive"],
                     "points": [4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -360,52 +360,52 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "Your friend has made a meal that tastes terrible. They ask, 'How is it?' You say...",
+            "question": "Your friend has made a meal that tastes terrible.\nThey ask, 'How is it?' You say...",
             "choices": [
                 {
                     "answer": "'Terrible.'",
-                    "traits": ["Brave", "Quiet"],
+                    "personalities": ["Brave", "Quiet"],
                     "points": [2, 2]
                 },
                 {
                     "answer": "Just smile.",
-                    "traits": ["Calm", "Lonely"],
+                    "personalities": ["Calm", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "'Uh...it's good.'",
-                    "traits": ["Timid", "Rash"],
+                    "personalities": ["Timid", "Rash"],
                     "points": [2, 2]
                 }
             ]
         },
         {
-            "question": "You run into a new person that you haven't talked to very much before. What do you do?",
+            "question": "You run into a new person that you haven't\ntalked to very much before. What do you do?",
             "choices": [
                 {
                     "answer": "Make small talk.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 },
                 {
                     "answer": "Say nothing.",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [2]
                 },
                 {
                     "answer": "Make an excuse to get away.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [4]
                 }
             ]
@@ -415,12 +415,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hasty", "Rash"],
+                    "personalities": ["Hasty", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Docile", "Quiet"],
+                    "personalities": ["Docile", "Quiet"],
                     "points": [2, 2]
                 }
             ]
@@ -430,12 +430,12 @@
             "choices": [
                 {
                     "answer": "Flip it!",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "Leave it be.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -445,37 +445,37 @@
             "choices": [
                 {
                     "answer": "Buy it right away!",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "Think whether you need it.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 },
                 {
                     "answer": "Try to haggle to a lower price.",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You're packing your friend's snacks for a picnic when you get hungry. What do you do?",
+            "question": "You're packing your friend's snacks for a picnic\nwhen you get hungry. What do you do?",
             "choices": [
                 {
                     "answer": "Eat just a tiny bit.",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "Hold myself back and finish packing.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 },
                 {
                     "answer": "What snacks? You mean the ones I just ate?",
-                    "traits": ["Rash"],
+                    "personalities": ["Rash"],
                     "points": [4]
                 }
             ]
@@ -485,12 +485,12 @@
             "choices": [
                 {
                     "answer": "Totally!",
-                    "traits": ["Sassy"],
+                    "personalities": ["Sassy"],
                     "points": [4]
                 },
                 {
                     "answer": "Of course not.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -500,27 +500,27 @@
             "choices": [
                 {
                     "answer": "Of course!",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm", "Quirky"],
+                    "personalities": ["Calm", "Quirky"],
                     "points": [4, 2]
                 }
             ]
         },
         {
-            "question": "Have you ever looked at your reflection in a mirror and thought, 'What a cool person'?",
+            "question": "Have you ever looked at your reflection in a mirror\nand thought, 'What a cool person'?",
             "choices": [
                 {
                     "answer": "Certainly!",
-                    "traits": ["Jolly", "Naive", "Sassy"],
+                    "personalities": ["Jolly", "Naive", "Sassy"],
                     "points": [2, 2, 4]
                 },
                 {
                     "answer": "Not really...",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 }
             ]
@@ -530,12 +530,12 @@
             "choices": [
                 {
                     "answer": "Of course.",
-                    "traits": ["Brave", "Sassy", "Bold"],
+                    "personalities": ["Brave", "Sassy", "Bold"],
                     "points": [4, 4, 2]
                 },
                 {
                     "answer": "Not really.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -545,77 +545,77 @@
             "choices": [
                 {
                     "answer": "Being busy.",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Having free time.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 },
                 {
                     "answer": "In between.",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You notice that something you bought for full price yesterday is marked down to half price today! How do you feel?",
+            "question": "You notice that something you bought for full price yesterday\nis marked down to half price today! How do you feel?",
             "choices": [
                 {
                     "answer": "Heartbroken...",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "Aaargh!",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
                     "answer": "Ugh, bad timing I guess...",
-                    "traits": ["Calm", "Bold"],
+                    "personalities": ["Calm", "Bold"],
                     "points": [4, 4]
                 }
             ]
         },
         {
-            "question": "You're about to buy a popular game when someone else gets the last copy! How do you feel?",
+            "question": "You're about to buy a popular game when someone else\ngets the last copy! How do you feel?",
             "choices": [
                 {
                     "answer": "Nothing, it happens.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 },
                 {
                     "answer": "Annoyed. I was here first!",
-                    "traits": ["Jolly", "Relaxed"],
+                    "personalities": ["Jolly", "Relaxed"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "I shed a few tears...",
-                    "traits": ["Lonely"],
+                    "personalities": ["Lonely"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You've just stuffed yourself with a good meal when a great dessert arrives. What do you do?",
+            "question": "You've just stuffed yourself with a good meal\nwhen a great dessert arrives. What do you do?",
             "choices": [
                 {
                     "answer": "Eat it. Who cares if I'm full?",
-                    "traits": ["Hasty", "Rash"],
+                    "personalities": ["Hasty", "Rash"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Turn it down, it's too fattening!",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 },
                 {
                     "answer": "Yum, dessert's the best!",
-                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "personalities": ["Jolly", "Relaxed", "Bold"],
                     "points": [4, 2, 4]
                 }
             ]
@@ -625,17 +625,17 @@
             "choices": [
                 {
                     "answer": "Study all night long.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "Wing it! It'll be fine!",
-                    "traits": ["Relaxed"],
+                    "personalities": ["Relaxed"],
                     "points": [4]
                 },
                 {
                     "answer": "Test?! I think I have a fever...",
-                    "traits": ["Naive"],
+                    "personalities": ["Naive"],
                     "points": [4]
                 }
             ]
@@ -645,12 +645,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Relaxed", "Bold"],
+                    "personalities": ["Relaxed", "Bold"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Not at all!",
-                    "traits": ["Hasty", "Lonely"],
+                    "personalities": ["Hasty", "Lonely"],
                     "points": [2, 4]
                 }
             ]
@@ -660,12 +660,12 @@
             "choices": [
                 {
                     "answer": "All the time!",
-                    "traits": ["Jolly", "Relaxed"],
+                    "personalities": ["Jolly", "Relaxed"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Never.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -675,37 +675,37 @@
             "choices": [
                 {
                     "answer": "Answer right away!",
-                    "traits": ["Hasty", "Lonely"],
+                    "personalities": ["Hasty", "Lonely"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Wait a bit before answering.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 },
                 {
                     "answer": "Ignore it and let it ring.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "Your friends seem to be making plans to hang out, just out of earshot. You think...",
+            "question": "Your friends seem to be making plans to hang out,\njust out of earshot. You think...",
             "choices": [
                 {
                     "answer": "I want to go too!",
-                    "traits": ["Naive"],
+                    "personalities": ["Naive"],
                     "points": [4]
                 },
                 {
                     "answer": "No big deal.",
-                    "traits": ["Lonely"],
+                    "personalities": ["Lonely"],
                     "points": [4]
                 },
                 {
                     "answer": "Will they invite me?",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -715,12 +715,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Relaxed"],
+                    "personalities": ["Relaxed"],
                     "points": [2]
                 }
             ]
@@ -730,12 +730,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hasty", "Quirky", "Rash"],
+                    "personalities": ["Hasty", "Quirky", "Rash"],
                     "points": [2, 4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -745,12 +745,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Hasty", "Quirky"],
+                    "personalities": ["Hasty", "Quirky"],
                     "points": [2, 4]
                 }
             ]
@@ -760,12 +760,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Quirky", "Rash"],
+                    "personalities": ["Quirky", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -775,17 +775,17 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Quiet", "Bold"],
+                    "personalities": ["Quiet", "Bold"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Brave"],
+                    "personalities": ["Brave"],
                     "points": [4]
                 },
                 {
                     "answer": "I don't know?",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [2]
                 }
             ]
@@ -795,112 +795,112 @@
             "choices": [
                 {
                     "answer": "Woo-hoo!",
-                    "traits": ["Jolly", "Naive"],
+                    "personalities": ["Jolly", "Naive"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "I can't believe it...",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 },
                 {
                     "answer": "This is my little secret.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "Your friend suddenly won't listen to you, when everything was fine yesterday. What happened?",
+            "question": "Your friend suddenly won't listen to you,\nwhen everything was fine yesterday. What happened?",
             "choices": [
                 {
                     "answer": "Maybe they're sick.",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "They're lost in thought.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [4]
                 },
                 {
                     "answer": "What?! Why?!",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "You take off your shoes to realize your socks are two different colors! What do you do?",
+            "question": "You take off your shoes to realize your socks\nare two different colors! What do you do?",
             "choices": [
                 {
                     "answer": "Get embarassed!",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
                     "answer": "Again?!",
-                    "traits": ["Rash"],
+                    "personalities": ["Rash"],
                     "points": [4]
                 },
                 {
                     "answer": "Ha, I meant to do that!",
-                    "traits": ["Jolly"],
+                    "personalities": ["Jolly"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "You fail miserably! Everyone found out, and they're disappointed in you... What do you do?",
+            "question": "You fail miserably! Everyone found out,\nand they're disappointed in you... What do you do?",
             "choices": [
                 {
                     "answer": "Try and hide...",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 },
                 {
                     "answer": "Think of an excuse.",
-                    "traits": ["Naive", "Sassy"],
+                    "personalities": ["Naive", "Sassy"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Drop down and play sick!",
-                    "traits": ["Rash"],
+                    "personalities": ["Rash"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "Have you ever blurted something out without thinking about the consequences first?",
+            "question": "Have you ever blurted something out without\nthinking about the consequences first?",
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Lonely", "Rash"],
+                    "personalities": ["Lonely", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "You're in a meeting when you realize that you really have to go to the restroom! What do you do?",
+            "question": "You're in a meeting when you realize that\nyou really have to go to the restroom! What do you do?",
             "choices": [
                 {
                     "answer": "Ask for permission to leave.",
-                    "traits": ["Brave", "Bold"],
+                    "personalities": ["Brave", "Bold"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Sneak out.",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [2]
                 },
                 {
                     "answer": "Hold on until the meeting ends!",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -910,37 +910,37 @@
             "choices": [
                 {
                     "answer": "Sure, I'll be there!",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 },
                 {
                     "answer": "No, allow me.",
-                    "traits": ["Jolly"],
+                    "personalities": ["Jolly"],
                     "points": [4]
                 },
                 {
                     "answer": "Thanks...",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You see a cake that is past its expiration date, but only by one day. What do you do?",
+            "question": "You see a cake that is past its expiration date,\nbut only by one day. What do you do?",
             "choices": [
                 {
                     "answer": "Not a problem! Chow time!",
-                    "traits": ["Brave", "Relaxed"],
+                    "personalities": ["Brave", "Relaxed"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Think about it, then decide.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 },
                 {
                     "answer": "Get someone to try it first.",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 }
             ]
@@ -950,37 +950,37 @@
             "choices": [
                 {
                     "answer": "Seared steak.",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Healthy fish.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 },
                 {
                     "answer": "Who cares? It's all good!",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You're in the final mile of a marathon, but the last stretch is exhausting! What will you do?",
+            "question": "You're in the final mile of a marathon, but\nthe last stretch is exhausting! What will you do?",
             "choices": [
                 {
                     "answer": "Hang in there and finish!",
-                    "traits": ["Hardy", "Brave"],
+                    "personalities": ["Hardy", "Brave"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Just walk it out.",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 },
                 {
                     "answer": "Find a shortcut.",
-                    "traits": ["Rash", "Bold"],
+                    "personalities": ["Rash", "Bold"],
                     "points": [2, 4]
                 }
             ]
@@ -990,17 +990,17 @@
             "choices": [
                 {
                     "answer": "Yes! That's easy!",
-                    "traits": ["Impish", "Sassy"],
+                    "personalities": ["Impish", "Sassy"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Yes, it's hard work though.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "No! Why would I do that?!",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
@@ -1010,17 +1010,17 @@
             "choices": [
                 {
                     "answer": "Carry it by myself.",
-                    "traits": ["Hardy", "Brave"],
+                    "personalities": ["Hardy", "Brave"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Ask someone to help.",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [2]
                 },
                 {
                     "answer": "Make someone else do it.",
-                    "traits": ["Sassy", "Bold"],
+                    "personalities": ["Sassy", "Bold"],
                     "points": [4, 4]
                 }
             ]
@@ -1030,27 +1030,27 @@
             "choices": [
                 {
                     "answer": "Of course.",
-                    "traits": ["Docile", "Bold"],
+                    "personalities": ["Docile", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No, that's not easy to admit.",
-                    "traits": ["Timid", "Lonely"],
+                    "personalities": ["Timid", "Lonely"],
                     "points": [4, 2]
                 }
             ]
         },
         {
-            "question": "A fortune-teller says that you have a bad future ahead of you. How do you react?",
+            "question": "A fortune-teller says that you have a bad\nfuture ahead of you. How do you react?",
             "choices": [
                 {
                     "answer": "Worry about it...",
-                    "traits": ["Docile", "Timid"],
+                    "personalities": ["Docile", "Timid"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Forget about it.",
-                    "traits": ["Jolly", "Relaxed", "Bold"],
+                    "personalities": ["Jolly", "Relaxed", "Bold"],
                     "points": [4, 2, 2]
                 }
             ]
@@ -1060,17 +1060,17 @@
             "choices": [
                 {
                     "answer": "Keep it all to myself.",
-                    "traits": ["Timid", "Bold"],
+                    "personalities": ["Timid", "Bold"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Share it with friends.",
-                    "traits": ["Docile", "Rash"],
+                    "personalities": ["Docile", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Spread a different rumor!",
-                    "traits": ["Impish"],
+                    "personalities": ["Impish"],
                     "points": [4]
                 }
             ]
@@ -1080,37 +1080,37 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Brave", "Bold"],
+                    "personalities": ["Brave", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Timid", "Lonely"],
+                    "personalities": ["Timid", "Lonely"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "It depends on the situation.",
-                    "traits": ["Quirky", "Quiet"],
+                    "personalities": ["Quirky", "Quiet"],
                     "points": [2, 2]
                 }
             ]
         },
         {
-            "question": "You're on a stroll when a TV crew pounces on you for an interview. What do you do?",
+            "question": "You're on a stroll when a TV crew pounces on you\nfor an interview. What do you do?",
             "choices": [
                 {
                     "answer": "Run away! How embarrasing.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [4]
                 },
                 {
                     "answer": "Answer questions properly.",
-                    "traits": ["Brave", "Sassy"],
+                    "personalities": ["Brave", "Sassy"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Ham it up! I'm on TV, woohoo!",
-                    "traits": ["Naive", "Bold"],
+                    "personalities": ["Naive", "Bold"],
                     "points": [4, 2]
                 }
             ]
@@ -1120,52 +1120,52 @@
             "choices": [
                 {
                     "answer": "Stay on the sidelines.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 },
                 {
                     "answer": "Join the parade!",
-                    "traits": ["Jolly", "Naive"],
+                    "personalities": ["Jolly", "Naive"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Walk away.",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 2]
                 }
             ]
         },
         {
-            "question": "Your friend tells a joke that's horribly corny! How do you react?",
+            "question": "Your friend tells a joke that's horribly corny!\nHow do you react?",
             "choices": [
                 {
                     "answer": "Roll on the floor laughing!",
-                    "traits": ["Jolly", "Naive"],
+                    "personalities": ["Jolly", "Naive"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Just let it go by...",
-                    "traits": ["Docile", "Impish"],
+                    "personalities": ["Docile", "Impish"],
                     "points": [2, 2]
                 },
                 {
                     "answer": "Slap my forehead and groan.",
-                    "traits": ["Brave"],
+                    "personalities": ["Brave"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You feel a burst of happiness! How about expressing it with a little dance?",
+            "question": "You feel a burst of happiness! How about\nexpressing it with a little dance?",
             "choices": [
                 {
                     "answer": "Sure!",
-                    "traits": ["Jolly", "Lonely"],
+                    "personalities": ["Jolly", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No, I wouldn't!",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -1175,12 +1175,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Jolly", "Bold"],
+                    "personalities": ["Jolly", "Bold"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Docile", "Timid"],
+                    "personalities": ["Docile", "Timid"],
                     "points": [2, 2]
                 }
             ]
@@ -1190,12 +1190,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Impish", "Rash"],
+                    "personalities": ["Impish", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -1205,12 +1205,12 @@
             "choices": [
                 {
                     "answer": "Sounds fun!",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Nah, not interested.",
-                    "traits": ["Timid", "Quirky"],
+                    "personalities": ["Timid", "Quirky"],
                     "points": [2, 4]
                 }
             ]
@@ -1220,12 +1220,12 @@
             "choices": [
                 {
                     "answer": "Go through it!",
-                    "traits": ["Brave", "Impish", "Hasty", "Rash"],
+                    "personalities": ["Brave", "Impish", "Hasty", "Rash"],
                     "points": [4, 4, 4, 2]
                 },
                 {
                     "answer": "Stay away from it.",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -1235,12 +1235,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Naive"],
+                    "personalities": ["Naive"],
                     "points": [4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -1250,32 +1250,32 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You think you hear someone call your name. But no one's around...so what was it?",
+            "question": "You think you hear someone call your name.\nBut no one's around...so what was it?",
             "choices": [
                 {
                     "answer": "Probably just my imagination.",
-                    "traits": ["Relaxed"],
+                    "personalities": ["Relaxed"],
                     "points": [4]
                 },
                 {
                     "answer": "Someone fooling around.",
-                    "traits": ["Naive", "Bold"],
+                    "personalities": ["Naive", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "Ooo, it was a ghost!",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [4]
                 }
             ]
@@ -1285,12 +1285,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hasty", "Rash"],
+                    "personalities": ["Hasty", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Docile", "Quiet"],
+                    "personalities": ["Docile", "Quiet"],
                     "points": [2, 2]
                 }
             ]
@@ -1300,12 +1300,12 @@
             "choices": [
                 {
                     "answer": "Totally!",
-                    "traits": ["Sassy"],
+                    "personalities": ["Sassy"],
                     "points": [4]
                 },
                 {
                     "answer": "Of course not.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -1315,12 +1315,12 @@
             "choices": [
                 {
                     "answer": "Of course!",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm", "Quirky"],
+                    "personalities": ["Calm", "Quirky"],
                     "points": [4, 2]
                 }
             ]
@@ -1330,12 +1330,12 @@
             "choices": [
                 {
                     "answer": "Certainly!",
-                    "traits": ["Jolly", "Naive", "Sassy"],
+                    "personalities": ["Jolly", "Naive", "Sassy"],
                     "points": [2, 2, 4]
                 },
                 {
                     "answer": "Well, not really...",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 }
             ]
@@ -1345,37 +1345,37 @@
             "choices": [
                 {
                     "answer": "I like the city!",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "I like the country!",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 },
                 {
                     "answer": "I like them both!",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
         },
         {
-            "question": "You're about to take the last cookie when your friend wolfs it down! What do you do?",
+            "question": "You're about to take the last cookie when your friend wolfs it down!\nWhat do you do?",
             "choices": [
                 {
                     "answer": "Whatever, it's just a cookie.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [4]
                 },
                 {
                     "answer": "I unleash my cookie fury!",
-                    "traits": ["Jolly", "Relaxed"],
+                    "personalities": ["Jolly", "Relaxed"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "I weep for my lost cookie.",
-                    "traits": ["Lonely"],
+                    "personalities": ["Lonely"],
                     "points": [4]
                 }
             ]
@@ -1385,12 +1385,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Relaxed", "Bold"],
+                    "personalities": ["Relaxed", "Bold"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Not at all!",
-                    "traits": ["Hasty", "Lonely"],
+                    "personalities": ["Hasty", "Lonely"],
                     "points": [2, 4]
                 }
             ]
@@ -1400,12 +1400,12 @@
             "choices": [
                 {
                     "answer": "All the time!",
-                    "traits": ["Jolly", "Relaxed"],
+                    "personalities": ["Jolly", "Relaxed"],
                     "points": [2, 4]
                 },
                 {
                     "answer": "Never.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -1415,33 +1415,13 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Sassy", "Lonely"],
+                    "personalities": ["Sassy", "Lonely"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Relaxed"],
+                    "personalities": ["Relaxed"],
                     "points": [2]
-                }
-            ]
-        },
-        {
-            "question": "You're about to take the last cookie when your friend wolfs it down! What do you do?",
-            "choices": [
-                {
-                    "answer": "Whatever, it's just a cookie.",
-                    "traits": ["Calm"],
-                    "points": [4]
-                },
-                {
-                    "answer": "I unleash my cookie fury!",
-                    "traits": ["Jolly", "Relaxed"],
-                    "points": [4, 4]
-                },
-                {
-                    "answer": "I weep for my lost cookie.",
-                    "traits": ["Lonely"],
-                    "points": [4]
                 }
             ]
         },
@@ -1450,12 +1430,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hasty", "Quirky", "Rash"],
+                    "personalities": ["Hasty", "Quirky", "Rash"],
                     "points": [2, 4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
@@ -1465,12 +1445,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Hasty", "Quirky"],
+                    "personalities": ["Hasty", "Quirky"],
                     "points": [2, 4]
                 }
             ]
@@ -1480,12 +1460,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Quirky", "Rash"],
+                    "personalities": ["Quirky", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Calm"],
+                    "personalities": ["Calm"],
                     "points": [2]
                 }
             ]
@@ -1495,17 +1475,17 @@
             "choices": [
                 {
                     "answer": "Of course!",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
                     "answer": "I'm not good at planning.",
-                    "traits": ["Quirky", "Rash"],
+                    "personalities": ["Quirky", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Plans? Who needs plans?",
-                    "traits": ["Relaxed"],
+                    "personalities": ["Relaxed"],
                     "points": [4]
                 }
             ]
@@ -1515,17 +1495,17 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Quiet", "Bold"],
+                    "personalities": ["Quiet", "Bold"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Brave"],
+                    "personalities": ["Brave"],
                     "points": [4]
                 },
                 {
                     "answer": "I don't know...",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 }
             ]
@@ -1535,17 +1515,17 @@
             "choices": [
                 {
                     "answer": "Someone bullied my friend.",
-                    "traits": ["Hasty"],
+                    "personalities": ["Hasty"],
                     "points": [4]
                 },
                 {
                     "answer": "My friend fell down, no doubt!",
-                    "traits": ["Quiet"],
+                    "personalities": ["Quiet"],
                     "points": [4]
                 },
                 {
                     "answer": "I wonder if it's my fault?",
-                    "traits": ["Timid"],
+                    "personalities": ["Timid"],
                     "points": [2]
                 }
             ]
@@ -1555,17 +1535,17 @@
             "choices": [
                 {
                     "answer": "Get embarassed!",
-                    "traits": ["Docile"],
+                    "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
                     "answer": "Laugh out loud!",
-                    "traits": ["Rash"],
+                    "personalities": ["Rash"],
                     "points": [4]
                 },
                 {
                     "answer": "Say it's the latest fashion!",
-                    "traits": ["Jolly"],
+                    "personalities": ["Jolly"],
                     "points": [4]
                 }
             ]
@@ -1575,12 +1555,12 @@
             "choices": [
                 {
                     "answer": "Of course!",
-                    "traits": ["Sassy", "Quiet"],
+                    "personalities": ["Sassy", "Quiet"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No way!",
-                    "traits": ["Brave"],
+                    "personalities": ["Brave"],
                     "points": [2]
                 }
             ]
@@ -1590,12 +1570,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Rash", "Bold"],
+                    "personalities": ["Rash", "Bold"],
                     "points": [4, 2]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 }
             ]
@@ -1605,12 +1585,12 @@
             "choices": [
                 {
                     "answer": "Yes.",
-                    "traits": ["Lonely", "Rash"],
+                    "personalities": ["Lonely", "Rash"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "No.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 }
             ]
@@ -1620,17 +1600,17 @@
             "choices": [
                 {
                     "answer": "Starring role!",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 },
                 {
                     "answer": "Supporting role.",
-                    "traits": ["Jolly"],
+                    "personalities": ["Jolly"],
                     "points": [4]
                 },
                 {
                     "answer": "Just an extra.",
-                    "traits": ["Quirky"],
+                    "personalities": ["Quirky"],
                     "points": [4]
                 }
             ]
@@ -1640,17 +1620,17 @@
             "choices": [
                 {
                     "answer": "Devour the food heartily!",
-                    "traits": ["Impish", "Naive"],
+                    "personalities": ["Impish", "Naive"],
                     "points": [4, 4]
                 },
                 {
                     "answer": "Enjoy the meal in polite moderation.",
-                    "traits": ["Hardy"],
+                    "personalities": ["Hardy"],
                     "points": [2]
                 },
                 {
                     "answer": "Ask to take leftovers home!",
-                    "traits": ["Bold"],
+                    "personalities": ["Bold"],
                     "points": [4]
                 }
             ]
