@@ -8,7 +8,7 @@ from moviepy.editor import VideoFileClip
 from pygame.locals import MOUSEBUTTONDOWN, QUIT
 
 from src.backend import PMDQuizBackend
-from src.const import FONT_PATH, FRAME_BG_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, TEXT_COLOR
+from src.const import ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, TEXT_COLOR
 
 class PMDQuizApp:
     def __init__(self, video_filename):
@@ -28,8 +28,9 @@ class PMDQuizApp:
         self.personality = None
 
         # Initialize styles
-        self.title_font = pygame.font.Font(FONT_PATH, 45)
-        self.subtitle_font = pygame.font.Font(FONT_PATH, 40)
+        self.title_font = pygame.font.Font(FONT_PATH, 70)
+        self.header_font = pygame.font.Font(FONT_PATH, 45)
+        self.subheader_font = pygame.font.Font(FONT_PATH, 40)
 
         # Set initial screen
         self.curr_window = "start"
@@ -84,11 +85,14 @@ class PMDQuizApp:
         self.window.blit(frame_surface, (0, 0))
 
     def display_start_screen(self):
-        start_screen_text = "Click here to start the personality test"
-        text_surface = self.title_font.render(start_screen_text, True, (255, 255, 255))
-        self.window.blit(text_surface, (50, 50))
+        title_text = "Pokemon Personality Test!"
+        title_surface = self.title_font.render(title_text, True, TEXT_COLOR)
+        title_rect = title_surface.get_rect(
+            center=(410, 75)
+        )
+        self.window.blit(title_surface, title_rect)
 
-        start_button_rect = pygame.Rect(50, 50, 400, 100)
+        start_button_rect = pygame.Rect(360, 200, 200, 100)
         pygame.draw.rect(self.window, (0, 255, 0), start_button_rect, 2)
 
         for event in pygame.event.get():
@@ -103,10 +107,11 @@ class PMDQuizApp:
 
         # Add question frame
         question_surface = pygame.Surface((QUESTION_FRAME_WIDTH, QUESTION_FRAME_HEIGHT))
-        question_surface.fill(FRAME_BG_COLOR)
-
+        question_surface.set_alpha(ALPHA_LEVEL)
+        question_surface.fill(QUESTION_FRAME_COLOR)
+    
         # Render question text in frame
-        question_text_surface = self.title_font.render(
+        question_text_surface = self.header_font.render(
             question, True, TEXT_COLOR
             )
         question_text_rect = question_text_surface.get_rect(
@@ -120,15 +125,16 @@ class PMDQuizApp:
         y_offset = 180
         for index, choice in enumerate(choices):
             choice_text = self.wrap_text(choice["answer"], 20)
-            text_surface = self.subtitle_font.render(choice_text, True, (255, 255, 255))
+            text_surface = self.subheader_font.render(choice_text, True, (255, 255, 255))
             text_rect = text_surface.get_rect()
-            text_rect.topleft = (500, y_offset)
-
+            text_rect.topright = (CHOICE_XRIGHT_POS, y_offset)
+            
             pygame.draw.rect(
                 self.window,
-                FRAME_BG_COLOR,
-                (text_rect.left - 5, text_rect.top - 5, text_rect.width + 10, text_rect.height + 10)
+                CHOICE_FRAME_COLOR,
+                (text_rect.left - 5, text_rect.top - 5, text_rect.width + 12, text_rect.height + 12)
             )
+
             self.window.blit(text_surface, text_rect)
             if choice != choices[-1]:
                 if len(choices[index + 1]["answer"]) <= 20:
@@ -142,7 +148,7 @@ class PMDQuizApp:
         y_offset = 180
         
         for index, choice in enumerate(choices):
-            if 500 <= x <= 500 + self.subtitle_font.size(choice["answer"])[0] and y_offset <= y <= y_offset + 30:
+            if CHOICE_XRIGHT_POS- self.subheader_font.size(choice["answer"])[0] <= x <= CHOICE_XRIGHT_POS and y_offset <= y <= y_offset + 30:
                 self.backend.assign_points(choice)
                 self.current_question += 1
                 return
@@ -155,7 +161,7 @@ class PMDQuizApp:
 
     def display_results(self):   
         result_text = f"Thanks for participating! Your personality is...{self.backend.final_personality}!"
-        text_surface = self.title_font.render(result_text, True, (255, 255, 255))
+        text_surface = self.header_font.render(result_text, True, (255, 255, 255))
         self.window.blit(text_surface, (50, 50))
 
 if __name__ == "__main__":

@@ -2,11 +2,15 @@ from __future__ import annotations
 
 # Frontend style constants
 FONT_PATH = "assets/PKMN-Mystery-Dungeon.ttf"
-FRAME_BG_COLOR = (32, 32, 32)
+
+ALPHA_LEVEL = 220
 TEXT_COLOR = (255, 255, 255)
 
+QUESTION_FRAME_COLOR = (32, 32, 32)
 QUESTION_FRAME_WIDTH = 700
 QUESTION_FRAME_HEIGHT = 125
+CHOICE_FRAME_COLOR = (54, 59, 63)
+CHOICE_XRIGHT_POS = 743
 
 
 # Backend constants
