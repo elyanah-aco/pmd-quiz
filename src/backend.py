@@ -4,7 +4,7 @@ import json
 import random
 from typing import Any
 
-from const import NUMBER_OF_QUESTIONS, POKEMON_CHOICES
+from src.const import NUMBER_OF_QUESTIONS, POKEMON_CHOICES
 
 class PMDQuizBackend:
 

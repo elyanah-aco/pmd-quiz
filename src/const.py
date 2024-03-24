@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
 NUMBER_OF_QUESTIONS = 10
 TEXT_WIDTH = 35
 POKEMON_CHOICES: dict[str: list[str]] = {
