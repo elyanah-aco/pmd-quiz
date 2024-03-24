@@ -1,10 +1,16 @@
 from __future__ import annotations
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+# Frontend style constants
+FONT_PATH = "assets/PKMN-Mystery-Dungeon.ttf"
+FRAME_BG_COLOR = (32, 32, 32)
+TEXT_COLOR = (255, 255, 255)
 
+QUESTION_FRAME_WIDTH = 700
+QUESTION_FRAME_HEIGHT = 125
+
+
+# Backend constants
 NUMBER_OF_QUESTIONS = 10
-TEXT_WIDTH = 35
 POKEMON_CHOICES: dict[str: list[str]] = {
     "Bold": ["Squirtle", "Turtwig"],
     "Brave": ["Charmander", "Pikachu"],
