@@ -9,7 +9,7 @@ from moviepy.editor import VideoFileClip
 from pygame.locals import MOUSEBUTTONDOWN, MOUSEBUTTONUP, QUIT, SRCALPHA
 
 from src.backend import PMDQuizBackend
-from src.const import ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
+from src.const import ALPHA_LEVEL, BLACK_SCREEN_ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
 
 WHITE = (255, 255, 255)
 
@@ -30,7 +30,8 @@ class PMDQuizApp:
         self.backend = PMDQuizBackend()
         self.questions = self.backend.randomize_questions()
         self.current_question = 0
-        self.personality = None
+        self.descriptions = None
+        self.current_description = 0
 
         # Initialize styles
         self.title_font = pygame.font.Font(FONT_PATH, 70)
@@ -59,9 +60,18 @@ class PMDQuizApp:
                             self.check_choice_click(x, y)
                         else:
                             self.backend.get_final_personality()
+                            self.generate_result_descriptions()
                             self.curr_window = "results"
                     elif self.curr_window == "results":
                         self.current_question = 0
+                        if self.current_description < len(self.descriptions):
+                            self.show_current_description_line()
+                            self.current_description += 1
+                        else:
+                            self.questions = self.backend.randomize_questions()
+                            self.current_description = 0
+                            self.curr_window = "start"
+                            
 
                 elif event.type == MOUSEBUTTONUP:
                     if self.check_press_and_hold(click_down_time):
@@ -71,7 +81,7 @@ class PMDQuizApp:
 
             # Display frontend widgets
             self.play_video_frame()
-                  
+                   
             if self.curr_window == "start":
                 self.display_start_screen()
             elif self.curr_window == "questions":
@@ -104,13 +114,13 @@ class PMDQuizApp:
         # Fill black screen with alpha transparency
         bg_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
         bg_surface.fill((0, 0, 0))
-        bg_surface.set_alpha(180)
+        bg_surface.set_alpha(BLACK_SCREEN_ALPHA_LEVEL)
         self.window.blit(bg_surface, (0, 0))
 
         # Render text widgets
         title_text = "Pokemon Personality Test"
         subtitle_text = "Inspired from the Pokemon Mystery Dungeon games"
-        instructions_text = "Please pay P100 to start"
+        instructions_text = "Please pay P100 to start!"
 
         title_surface = self.title_font.render(title_text, True, TEXT_COLOR)
         subtitle_surface = self.header_font.render(subtitle_text, True, TEXT_COLOR)
@@ -188,10 +198,40 @@ class PMDQuizApp:
                 else:
                     y_offset -= 65
 
-    def display_results(self):   
-        result_text = f"Thanks for participating! Your personality is...{self.backend.final_personality}!"
-        text_surface = self.header_font.render(result_text, True, (255, 255, 255))
-        self.window.blit(text_surface, (50, 50))
+    def generate_result_descriptions(self):
+        # List all lines to display
+        personality_desc_lines = textwrap.wrap(self.backend.get_personality_description())
+        init_results_lines = [
+            "The results are in!",
+            f"You are...the {self.backend.final_personality} type!"
+            ]
+        final_line = [f"As a {self.backend.final_personality} type, the Pokemon that suits you best is..."]
+        self.descriptions = init_results_lines + personality_desc_lines + final_line
+
+    def display_results(self):
+        # Fill black screen with alpha transparency
+        bg_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
+        bg_surface.fill((0, 0, 0))
+        bg_surface.set_alpha(BLACK_SCREEN_ALPHA_LEVEL)
+        self.window.blit(bg_surface, (0, 0))
+
+        if self.current_description < len(self.descriptions):
+            self.show_current_description_line()
+
+    def show_current_description_line(self):
+        
+        display_surface = pygame.Surface((QUESTION_FRAME_WIDTH, QUESTION_FRAME_HEIGHT), SRCALPHA)
+    
+        curr_line = self.descriptions[self.current_description]
+        curr_line_surface = self.header_font.render(
+            self.wrap_text(curr_line, 25), True, WHITE
+            )
+        curr_line_rect = curr_line_surface.get_rect(
+            center=(QUESTION_FRAME_WIDTH/2, QUESTION_FRAME_HEIGHT/2)
+        )
+
+        display_surface.blit(curr_line_surface, curr_line_rect)
+        self.window.blit(display_surface, (50, 120))
 
 if __name__ == "__main__":
     game = PMDQuizApp('assets/background.mp4')  # Replace with your video file path
