@@ -3,19 +3,24 @@ from __future__ import annotations
 import sys
 import textwrap
 
+
 import pygame
 from moviepy.editor import VideoFileClip
-from pygame.locals import MOUSEBUTTONDOWN, QUIT
+from pygame.locals import MOUSEBUTTONDOWN, MOUSEBUTTONUP, QUIT, SRCALPHA
 
 from src.backend import PMDQuizBackend
-from src.const import ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, TEXT_COLOR
+from src.const import ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
+
+WHITE = (255, 255, 255)
 
 class PMDQuizApp:
     def __init__(self, video_filename):
         pygame.init()
         self.clip = VideoFileClip(video_filename, audio=False)
         self.window_size = self.clip.size
-        self.window = pygame.display.set_mode((800, 400))
+        self.window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+        pygame.display.set_caption("Pokemon Mystery Dungeon Personality Quiz")
+    
         self.video = self.clip.iter_frames()
         self.frame = next(self.video)  # Get the first frame to start with
         self.clock = pygame.time.Clock()
@@ -38,12 +43,16 @@ class PMDQuizApp:
 
     def run(self):
 
-        # Initialize/calculate backend params
+        # Initialize backend params, calculate backend logic
+        click_down_time = None
+        
         while self.running:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     self.running = False
                 elif event.type == MOUSEBUTTONDOWN:
+                    click_down_time = pygame.time.get_ticks()
+
                     if self.curr_window == "questions":
                         if self.current_question < len(self.questions):
                             x, y = pygame.mouse.get_pos()
@@ -52,7 +61,13 @@ class PMDQuizApp:
                             self.backend.get_final_personality()
                             self.curr_window = "results"
                     elif self.curr_window == "results":
-                        self.current_question = 0    
+                        self.current_question = 0
+
+                elif event.type == MOUSEBUTTONUP:
+                    if self.check_press_and_hold(click_down_time):
+                        if self.curr_window == "start":
+                            self.curr_window = "questions"
+                        click_down_time = None
 
             # Display frontend widgets
             self.play_video_frame()
@@ -85,22 +100,36 @@ class PMDQuizApp:
         self.window.blit(frame_surface, (0, 0))
 
     def display_start_screen(self):
-        title_text = "Pokemon Personality Test!"
+
+        # Fill black screen with alpha transparency
+        bg_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
+        bg_surface.fill((0, 0, 0))
+        bg_surface.set_alpha(180)
+        self.window.blit(bg_surface, (0, 0))
+
+        # Render text widgets
+        title_text = "Pokemon Personality Test"
+        subtitle_text = "Inspired from the Pokemon Mystery Dungeon games"
+        instructions_text = "Please pay P100 to start"
+
         title_surface = self.title_font.render(title_text, True, TEXT_COLOR)
-        title_rect = title_surface.get_rect(
-            center=(410, 75)
-        )
+        subtitle_surface = self.header_font.render(subtitle_text, True, TEXT_COLOR)
+        instructions_surface = self.header_font.render(instructions_text, True, TEXT_COLOR)
+        
+        title_rect = title_surface.get_rect(center=(410, 75))
+        subtitle_rect = subtitle_surface.get_rect(center=(410, title_rect.height + 80))
+        instructions_rect = instructions_surface.get_rect(center=(410, subtitle_rect.height + 300))
+        
         self.window.blit(title_surface, title_rect)
+        self.window.blit(subtitle_surface, subtitle_rect)
+        self.window.blit(instructions_surface, instructions_rect)
 
-        start_button_rect = pygame.Rect(360, 200, 200, 100)
-        pygame.draw.rect(self.window, (0, 255, 0), start_button_rect, 2)
-
-        for event in pygame.event.get():
-            if event.type == MOUSEBUTTONDOWN:
-                mouse_pos = pygame.mouse.get_pos()
-                if start_button_rect.collidepoint(mouse_pos):
-                    self.curr_window = "questions"
-
+    def check_press_and_hold(self, click_down_time) -> bool:
+        if click_down_time is None:
+            return False
+        held_time = pygame.time.get_ticks() - click_down_time
+        return held_time >= START_HOLD_WAIT
+                      
     def display_question(self, curr_question):
         question = self.wrap_text(curr_question["question"], 40)
         choices = curr_question["choices"]
@@ -125,7 +154,7 @@ class PMDQuizApp:
         y_offset = 180
         for index, choice in enumerate(choices):
             choice_text = self.wrap_text(choice["answer"], 20)
-            text_surface = self.subheader_font.render(choice_text, True, (255, 255, 255))
+            text_surface = self.subheader_font.render(choice_text, True, TEXT_COLOR)
             text_rect = text_surface.get_rect()
             text_rect.topright = (CHOICE_XRIGHT_POS, y_offset)
             
@@ -148,7 +177,7 @@ class PMDQuizApp:
         y_offset = 180
         
         for index, choice in enumerate(choices):
-            if CHOICE_XRIGHT_POS- self.subheader_font.size(choice["answer"])[0] <= x <= CHOICE_XRIGHT_POS and y_offset <= y <= y_offset + 30:
+            if CHOICE_XRIGHT_POS - self.subheader_font.size(choice["answer"])[0] <= x <= CHOICE_XRIGHT_POS and y_offset <= y <= y_offset + 30:
                 self.backend.assign_points(choice)
                 self.current_question += 1
                 return

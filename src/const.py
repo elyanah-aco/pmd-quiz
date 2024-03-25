@@ -3,8 +3,12 @@ from __future__ import annotations
 # Frontend style constants
 FONT_PATH = "assets/PKMN-Mystery-Dungeon.ttf"
 
+WINDOW_HEIGHT = 400
+WINDOW_WIDTH = 800
 ALPHA_LEVEL = 220
 TEXT_COLOR = (255, 255, 255)
+
+START_HOLD_WAIT = 2000
 
 QUESTION_FRAME_COLOR = (32, 32, 32)
 QUESTION_FRAME_WIDTH = 700
