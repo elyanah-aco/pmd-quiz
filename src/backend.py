@@ -11,6 +11,7 @@ class PMDQuizBackend:
     def __init__(self): 
         self.personality_scores = {}
         self.final_personality = None
+        self.final_pokemon = None
         self.all_questions = json.load(open("questions.json"))["all_questions"]
         self.all_descriptions = json.load(open("personalities.json"))["all_personalities"]
 
@@ -46,5 +47,5 @@ class PMDQuizBackend:
         
     def get_final_pokemon(self) -> str:
         possible_pokemon = POKEMON_CHOICES[self.final_personality]  # TODO: Must check database of pokemon to see which ones are not available anymore
-        return random.choice(possible_pokemon)
+        self.final_pokemon = random.choice(possible_pokemon)
         

@@ -37,6 +37,7 @@ class PMDQuizApp:
         self.title_font = pygame.font.Font(FONT_PATH, 70)
         self.header_font = pygame.font.Font(FONT_PATH, 45)
         self.subheader_font = pygame.font.Font(FONT_PATH, 40)
+        self.subsubheader_font = pygame.font.Font(FONT_PATH, 30)
 
         # Set initial screen
         self.curr_window = "start"
@@ -61,22 +62,27 @@ class PMDQuizApp:
                         else:
                             self.backend.get_final_personality()
                             self.generate_result_descriptions()
-                            self.curr_window = "results"
-                    elif self.curr_window == "results":
+                            self.curr_window = "desc_results"
+                    elif self.curr_window == "desc_results":
                         self.current_question = 0
                         if self.current_description < len(self.descriptions):
                             self.show_current_description_line()
                             self.current_description += 1
                         else:
-                            self.questions = self.backend.randomize_questions()
-                            self.current_description = 0
-                            self.curr_window = "start"
+                            self.backend.get_final_pokemon()
+                            self.curr_window = "pokemon_results"
                             
-
                 elif event.type == MOUSEBUTTONUP:
                     if self.check_press_and_hold(click_down_time):
                         if self.curr_window == "start":
                             self.curr_window = "questions"
+                        if self.curr_window == "pokemon_results":
+                            # Reset all results, questions
+                            self.curr_window = "start"
+                            self.questions = self.backend.randomize_questions()
+                            self.current_description = 0
+                            self.backend.final_personality = None
+                            self.backend.final_pokemon = None
                         click_down_time = None
 
             # Display frontend widgets
@@ -87,8 +93,10 @@ class PMDQuizApp:
             elif self.curr_window == "questions":
                 if self.current_question < len(self.questions):
                     self.display_question(self.questions[self.current_question])
-            elif self.curr_window == "results":
-                self.display_results()
+            elif self.curr_window == "desc_results":
+                self.display_desc_results()
+            elif self.curr_window == "pokemon_results":
+                self.display_pokemon_results()
 
             pygame.display.update()
             self.clock.tick(self.clip.fps)
@@ -198,17 +206,8 @@ class PMDQuizApp:
                 else:
                     y_offset -= 65
 
-    def generate_result_descriptions(self):
-        # List all lines to display
-        personality_desc_lines = textwrap.wrap(self.backend.get_personality_description())
-        init_results_lines = [
-            "The results are in!",
-            f"You are...the {self.backend.final_personality} type!"
-            ]
-        final_line = [f"As a {self.backend.final_personality} type, the Pokemon that suits you best is..."]
-        self.descriptions = init_results_lines + personality_desc_lines + final_line
-
-    def display_results(self):
+    # Result (description) window
+    def display_desc_results(self):
         # Fill black screen with alpha transparency
         bg_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
         bg_surface.fill((0, 0, 0))
@@ -218,8 +217,16 @@ class PMDQuizApp:
         if self.current_description < len(self.descriptions):
             self.show_current_description_line()
 
+    def generate_result_descriptions(self):
+        personality_desc_lines = self.backend.get_personality_description().split("\n")
+        init_results_lines = [
+            "The results are in!",
+            f"You are...the {self.backend.final_personality} type!"
+            ]
+        final_line = [f"As a {self.backend.final_personality} type, the Pokemon that suits you best is..."]
+        self.descriptions = init_results_lines + personality_desc_lines + final_line
+
     def show_current_description_line(self):
-        
         display_surface = pygame.Surface((QUESTION_FRAME_WIDTH, QUESTION_FRAME_HEIGHT), SRCALPHA)
     
         curr_line = self.descriptions[self.current_description]
@@ -232,6 +239,35 @@ class PMDQuizApp:
 
         display_surface.blit(curr_line_surface, curr_line_rect)
         self.window.blit(display_surface, (50, 120))
+
+    # Result (Pokemon) window
+    def display_pokemon_results(self):
+        # Fill black screen with alpha transparency
+        bg_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
+        bg_surface.fill((0, 0, 0))
+        bg_surface.set_alpha(BLACK_SCREEN_ALPHA_LEVEL)
+        self.window.blit(bg_surface, (0, 0))
+
+        # Display text widgets
+        pokemon_text = f"{self.backend.final_pokemon}!"
+        thanks_text = "Thanks for playing!"
+        claim_text = f"Please claim your {self.backend.final_pokemon} pin and sticker."
+        press_text = "Press and hold to return to the start screen"
+
+        pokemon_surface = self.title_font.render(pokemon_text, True, WHITE)
+        thanks_surface = self.header_font.render(thanks_text, True, WHITE)
+        claim_surface = self.header_font.render(claim_text, True, WHITE)
+        press_surface = self.subsubheader_font.render(press_text, True, WHITE)
+
+        pokemon_rect = pokemon_surface.get_rect(center=(410, 75))
+        thanks_rect = thanks_surface.get_rect(center=(410, 250))
+        claim_rect = claim_surface.get_rect(center=(410, thanks_rect.height + 250))
+        press_rect = press_surface.get_rect(center=(410, claim_rect.height + 320))
+
+        self.window.blit(pokemon_surface, pokemon_rect)
+        self.window.blit(thanks_surface, thanks_rect)
+        self.window.blit(claim_surface, claim_rect)
+        self.window.blit(press_surface, press_rect)
 
 if __name__ == "__main__":
     game = PMDQuizApp('assets/background.mp4')  # Replace with your video file path
