@@ -85,13 +85,11 @@ class PMDQuizApp:
                         if self.curr_window == "start":
                             self.curr_window = "questions"
                         if self.curr_window == "pokemon_results":
-
-                            
-
                             # Reset all results, questions
                             self.curr_window = "start"
                             self.questions = self.backend.randomize_questions()
                             self.current_description = 0
+                            self.backend.personality_scores = {}
                             self.backend.final_personality = None
                             self.backend.final_pokemon = None
                         click_down_time = None
