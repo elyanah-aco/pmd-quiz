@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # Frontend style constants
 FONT_PATH = "assets/PKMN-Mystery-Dungeon.ttf"
+BG_MUSIC_PATH = "assets/bg_music.mp3"
 
 WINDOW_HEIGHT = 400
 WINDOW_WIDTH = 800
@@ -19,7 +20,15 @@ CHOICE_XRIGHT_POS = 743
 
 
 # Backend constants
+DB_FP = "results.csv"
+QUESTIONS_JSON_FP = "questions.json"
+PERSONALITIES_JSON_FP = "personalities.json"
+
+
 NUMBER_OF_QUESTIONS = 10
+MAX_PERSONALITY_ENTRIES = 14
+MAX_POKEMON_ENTRIES = 7
+
 POKEMON_CHOICES: dict[str: list[str]] = {
     "Bold": ["Squirtle", "Turtwig"],
     "Brave": ["Charmander", "Pikachu"],

@@ -3,19 +3,28 @@ from __future__ import annotations
 import sys
 import textwrap
 
-
 import pygame
 from moviepy.editor import VideoFileClip
+from pygame import mixer
 from pygame.locals import MOUSEBUTTONDOWN, MOUSEBUTTONUP, QUIT, SRCALPHA
 
 from src.backend import PMDQuizBackend
-from src.const import ALPHA_LEVEL, BLACK_SCREEN_ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
+from src.const import ALPHA_LEVEL, BG_MUSIC_PATH, BLACK_SCREEN_ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
 
 WHITE = (255, 255, 255)
 
 class PMDQuizApp:
     def __init__(self, video_filename):
+
         pygame.init()
+
+        # Initialize and play music
+        mixer.init()
+        mixer.music.load(BG_MUSIC_PATH)
+        mixer.music.play(-1)
+        mixer.music.set_volume(0.6)
+
+        # Initialize and play video as background
         self.clip = VideoFileClip(video_filename, audio=False)
         self.window_size = self.clip.size
         self.window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -42,9 +51,7 @@ class PMDQuizApp:
         # Set initial screen
         self.curr_window = "start"
         
-
     def run(self):
-
         # Initialize backend params, calculate backend logic
         click_down_time = None
         
@@ -70,6 +77,7 @@ class PMDQuizApp:
                             self.current_description += 1
                         else:
                             self.backend.get_final_pokemon()
+                            self.backend.update_result_database()
                             self.curr_window = "pokemon_results"
                             
                 elif event.type == MOUSEBUTTONUP:
@@ -77,6 +85,9 @@ class PMDQuizApp:
                         if self.curr_window == "start":
                             self.curr_window = "questions"
                         if self.curr_window == "pokemon_results":
+
+                            
+
                             # Reset all results, questions
                             self.curr_window = "start"
                             self.questions = self.backend.randomize_questions()
@@ -97,6 +108,7 @@ class PMDQuizApp:
                 self.display_desc_results()
             elif self.curr_window == "pokemon_results":
                 self.display_pokemon_results()
+                
 
             pygame.display.update()
             self.clock.tick(self.clip.fps)
