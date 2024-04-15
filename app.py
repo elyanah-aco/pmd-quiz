@@ -9,7 +9,7 @@ from pygame import mixer
 from pygame.locals import MOUSEBUTTONDOWN, MOUSEBUTTONUP, QUIT, SRCALPHA
 
 from src.backend import PMDQuizBackend
-from src.const import ALPHA_LEVEL, BG_MUSIC_PATH, BLACK_SCREEN_ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
+from src.const import ALPHA_LEVEL, BG_MUSIC_PATH, BLACK_SCREEN_ALPHA_LEVEL, CHOICE_FRAME_COLOR,CHOICE_XRIGHT_POS, FONT_PATH, PORTRAIT_PATH, QUESTION_FRAME_COLOR, QUESTION_FRAME_HEIGHT, QUESTION_FRAME_WIDTH, START_HOLD_WAIT, TEXT_COLOR, WINDOW_HEIGHT, WINDOW_WIDTH
 
 WHITE = (255, 255, 255)
 
@@ -26,7 +26,6 @@ class PMDQuizApp:
 
         # Initialize and play video as background
         self.clip = VideoFileClip(video_filename, audio=False)
-        self.window_size = self.clip.size
         self.window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
         pygame.display.set_caption("Pokemon Mystery Dungeon Personality Quiz")
     
@@ -43,10 +42,10 @@ class PMDQuizApp:
         self.current_description = 0
 
         # Initialize styles
-        self.title_font = pygame.font.Font(FONT_PATH, 70)
-        self.header_font = pygame.font.Font(FONT_PATH, 45)
-        self.subheader_font = pygame.font.Font(FONT_PATH, 40)
-        self.subsubheader_font = pygame.font.Font(FONT_PATH, 30)
+        self.title_font = pygame.font.Font(FONT_PATH, 100)
+        self.header_font = pygame.font.Font(FONT_PATH, 70)
+        self.subheader_font = pygame.font.Font(FONT_PATH, 65)
+        self.subsubheader_font = pygame.font.Font(FONT_PATH, 45)
 
         # Set initial screen
         self.curr_window = "start"
@@ -144,9 +143,9 @@ class PMDQuizApp:
         subtitle_surface = self.header_font.render(subtitle_text, True, TEXT_COLOR)
         instructions_surface = self.header_font.render(instructions_text, True, TEXT_COLOR)
         
-        title_rect = title_surface.get_rect(center=(410, 75))
-        subtitle_rect = subtitle_surface.get_rect(center=(410, title_rect.height + 80))
-        instructions_rect = instructions_surface.get_rect(center=(410, subtitle_rect.height + 300))
+        title_rect = title_surface.get_rect(center=(630, 100))
+        subtitle_rect = subtitle_surface.get_rect(center=(630, title_rect.height + 120))
+        instructions_rect = instructions_surface.get_rect(center=(630, subtitle_rect.height + 450))
         
         self.window.blit(title_surface, title_rect)
         self.window.blit(subtitle_surface, subtitle_rect)
@@ -163,7 +162,7 @@ class PMDQuizApp:
         choices = curr_question["choices"]
 
         # Add question frame
-        question_surface = pygame.Surface((QUESTION_FRAME_WIDTH, QUESTION_FRAME_HEIGHT))
+        question_surface = pygame.Surface((900, 190))
         question_surface.set_alpha(ALPHA_LEVEL)
         question_surface.fill(QUESTION_FRAME_COLOR)
     
@@ -172,14 +171,14 @@ class PMDQuizApp:
             question, True, TEXT_COLOR
             )
         question_text_rect = question_text_surface.get_rect(
-            center=(QUESTION_FRAME_WIDTH/2, QUESTION_FRAME_HEIGHT/2)
+            center=(450, 85)
         )
     
         question_surface.blit(question_text_surface, question_text_rect)
-        self.window.blit(question_surface, (50, 240))
+        self.window.blit(question_surface, (200, 370))
         
         # Display choices
-        y_offset = 180
+        y_offset = 270
         for index, choice in enumerate(choices):
             choice_text = self.wrap_text(choice["answer"], 20)
             text_surface = self.subheader_font.render(choice_text, True, TEXT_COLOR)
@@ -189,32 +188,32 @@ class PMDQuizApp:
             pygame.draw.rect(
                 self.window,
                 CHOICE_FRAME_COLOR,
-                (text_rect.left - 5, text_rect.top - 5, text_rect.width + 12, text_rect.height + 12)
+                (text_rect.left - 10, text_rect.top - 5, text_rect.width + 15, text_rect.height + 15)
             )
 
             self.window.blit(text_surface, text_rect)
             if choice != choices[-1]:
                 if len(choices[index + 1]["answer"]) <= 20:
-                    y_offset -= 45
+                    y_offset -= 60
                 else:
-                    y_offset -= 65
+                    y_offset -= 100
 
     def check_choice_click(self, x, y):
         curr_question = self.questions[self.current_question]
         choices = curr_question["choices"]
-        y_offset = 180
+        y_offset = 270
         
         for index, choice in enumerate(choices):
-            if CHOICE_XRIGHT_POS - self.subheader_font.size(choice["answer"])[0] <= x <= CHOICE_XRIGHT_POS and y_offset <= y <= y_offset + 30:
+            if CHOICE_XRIGHT_POS - self.subheader_font.size(choice["answer"])[0] <= x <= CHOICE_XRIGHT_POS and y_offset <= y <= y_offset + 40:
                 self.backend.assign_points(choice)
                 self.current_question += 1
                 return
             
             if choice != choices[-1]:
                 if len(choices[index + 1]["answer"]) <= 20:
-                    y_offset -= 45
+                    y_offset -= 60
                 else:
-                    y_offset -= 65
+                    y_offset -= 100
 
     # Result (description) window
     def display_desc_results(self):
@@ -237,18 +236,18 @@ class PMDQuizApp:
         self.descriptions = init_results_lines + personality_desc_lines + final_line
 
     def show_current_description_line(self):
-        display_surface = pygame.Surface((QUESTION_FRAME_WIDTH, QUESTION_FRAME_HEIGHT), SRCALPHA)
+        display_surface = pygame.Surface((1000, 190), SRCALPHA)
     
         curr_line = self.descriptions[self.current_description]
         curr_line_surface = self.header_font.render(
             self.wrap_text(curr_line, 25), True, WHITE
             )
         curr_line_rect = curr_line_surface.get_rect(
-            center=(QUESTION_FRAME_WIDTH/2, QUESTION_FRAME_HEIGHT/2)
+            center=(400, 85)
         )
 
         display_surface.blit(curr_line_surface, curr_line_rect)
-        self.window.blit(display_surface, (50, 120))
+        self.window.blit(display_surface, (235, 220))
 
     # Result (Pokemon) window
     def display_pokemon_results(self):
@@ -258,23 +257,30 @@ class PMDQuizApp:
         bg_surface.set_alpha(BLACK_SCREEN_ALPHA_LEVEL)
         self.window.blit(bg_surface, (0, 0))
 
+        # Load Pokemon portrait
+        pokemon_image = pygame.image.load(PORTRAIT_PATH.format(
+            pokemon=self.backend.final_pokemon.lower()
+        ))
+        pokemon_image = pygame.transform.scale(pokemon_image, (320, 320))
+
         # Display text widgets
         pokemon_text = f"{self.backend.final_pokemon}!"
         thanks_text = "Thanks for playing!"
-        claim_text = f"Please claim your {self.backend.final_pokemon} pin and sticker."
+        claim_text = f"Show a screenshot to claim your {self.backend.final_pokemon} pin and sticker."
         press_text = "Press and hold to return to the start screen"
 
         pokemon_surface = self.title_font.render(pokemon_text, True, WHITE)
         thanks_surface = self.header_font.render(thanks_text, True, WHITE)
-        claim_surface = self.header_font.render(claim_text, True, WHITE)
+        claim_surface = self.subheader_font.render(claim_text, True, WHITE)
         press_surface = self.subsubheader_font.render(press_text, True, WHITE)
 
-        pokemon_rect = pokemon_surface.get_rect(center=(410, 75))
-        thanks_rect = thanks_surface.get_rect(center=(410, 250))
-        claim_rect = claim_surface.get_rect(center=(410, thanks_rect.height + 250))
-        press_rect = press_surface.get_rect(center=(410, claim_rect.height + 320))
+        pokemon_rect = pokemon_surface.get_rect(center=(630, 65))
+        thanks_rect = thanks_surface.get_rect(center=(630, 450))
+        claim_rect = claim_surface.get_rect(center=(630, 500))
+        press_rect = press_surface.get_rect(center=(630, 550))
 
         self.window.blit(pokemon_surface, pokemon_rect)
+        self.window.blit(pokemon_image, (460, 100))
         self.window.blit(thanks_surface, thanks_rect)
         self.window.blit(claim_surface, claim_rect)
         self.window.blit(press_surface, press_rect)
