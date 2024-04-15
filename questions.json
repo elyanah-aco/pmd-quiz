@@ -4,12 +4,12 @@
             "question": "Do you like karaoke?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I love singing!",
                     "personalities": ["Jolly", "Bold"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "I'd rather do something else.",
                     "personalities": ["Docile", "Timid"],
                     "points": [2, 2]
                 }
@@ -94,12 +94,12 @@
             "question": "Do you think you have good study habits?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I study diligently.",
                     "personalities": ["Docile"],
                     "points": [4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, I slack off...",
                     "personalities": ["Naive", "Rash"],
                     "points": [4, 2]
                 },
@@ -259,7 +259,7 @@
             "question": "You're hiking up a mountain when you reach diverging paths.\nWhich kind do you take?",
             "choices": [
                 {
-                    "answer": "Narrow",
+                    "answer": "Narrow.",
                     "personalities": ["Impish", "Naive"],
                     "points": [4, 2]
                 },
@@ -344,12 +344,12 @@
             "question": "Have you ever thought that if you dug in your backyard\nyou could find buried treasure?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Of course there is!",
                     "personalities": ["Naive"],
                     "points": [4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "That sounds silly.",
                     "personalities": ["Quiet"],
                     "points": [2]
                 }
@@ -359,12 +359,12 @@
             "question": "Have you ever told a joke that just completely fell flat?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, sadly...",
                     "personalities": ["Impish", "Naive"],
                     "points": [2, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, my jokes always land!",
                     "personalities": ["Calm"],
                     "points": [4]
                 }
@@ -414,12 +414,12 @@
             "question": "Have you ever realized you were hogging the conversation?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I get carried away.",
                     "personalities": ["Hasty", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, I know when to listen.",
                     "personalities": ["Docile", "Quiet"],
                     "points": [2, 2]
                 }
@@ -474,7 +474,7 @@
                     "points": [2]
                 },
                 {
-                    "answer": "What snacks? You mean the ones I just ate?",
+                    "answer": "What snacks? The ones I just ate?",
                     "personalities": ["Rash"],
                     "points": [4]
                 }
@@ -504,7 +504,7 @@
                     "points": [4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, it's okay to not be.",
                     "personalities": ["Calm", "Quirky"],
                     "points": [4, 2]
                 }
@@ -534,7 +534,7 @@
                     "points": [4, 4, 2]
                 },
                 {
-                    "answer": "Not really.",
+                    "answer": "No, I can't do that.",
                     "personalities": ["Timid"],
                     "points": [2]
                 }
@@ -644,7 +644,7 @@
             "question": "Your friend is running a little late to meet you. Is that OK?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Of course I can wait!",
                     "personalities": ["Relaxed", "Bold"],
                     "points": [2, 4]
                 },
@@ -714,12 +714,12 @@
             "question": "Do you want to be famous?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Definitely!",
                     "personalities": ["Sassy", "Lonely"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, that's not appealing.",
                     "personalities": ["Relaxed"],
                     "points": [2]
                 }
@@ -729,12 +729,12 @@
             "question": "Have you ever forgotten you bought something and bought another one?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I'm forgetful!",
                     "personalities": ["Hasty", "Quirky", "Rash"],
                     "points": [2, 4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Not really.",
                     "personalities": ["Quiet"],
                     "points": [2]
                 }
@@ -744,12 +744,12 @@
             "question": "Once you've decided something, do you see it through to the end?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I do.",
                     "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Not all the time.",
                     "personalities": ["Hasty", "Quirky"],
                     "points": [2, 4]
                 }
@@ -759,12 +759,12 @@
             "question": "Have you ever said 'nice to meet you' to someone you've met previously?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes...",
                     "personalities": ["Quirky", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, I remember those I've met.",
                     "personalities": ["Calm"],
                     "points": [2]
                 }
@@ -774,12 +774,12 @@
             "question": "Do you think it's important to be fashionably late?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Haha, of course!",
                     "personalities": ["Quiet", "Bold"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, that's rude.",
                     "personalities": ["Brave"],
                     "points": [4]
                 },
@@ -874,12 +874,12 @@
             "question": "Have you ever blurted something out without\nthinking about the consequences first?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, sadly...",
                     "personalities": ["Lonely", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, not really.",
                     "personalities": ["Hardy"],
                     "points": [2]
                 }
@@ -1079,12 +1079,12 @@
             "question": "Do you state your opinion even when it's not what everyone else thinks?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, my opinion is important.",
                     "personalities": ["Brave", "Bold"],
                     "points": [4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, the consensus works best.",
                     "personalities": ["Timid", "Lonely"],
                     "points": [2, 4]
                 },
@@ -1174,12 +1174,12 @@
             "question": "Can you strike up conversations with new people easily?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "No sweat!",
                     "personalities": ["Jolly", "Bold"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "I'd rather talk to those I know.",
                     "personalities": ["Docile", "Timid"],
                     "points": [2, 2]
                 }
@@ -1189,12 +1189,12 @@
             "question": "Do you get injured a lot?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, and I'm used to it!",
                     "personalities": ["Impish", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, I'm careful.",
                     "personalities": ["Calm"],
                     "points": [2]
                 }
@@ -1231,15 +1231,15 @@
             ]
         },
         {
-            "question": "Have you ever wanted to communicate with aliens from another planet?",
+            "question": "What do you feel about communicating with aliens from another planet?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Sounds cool!",
                     "personalities": ["Naive"],
                     "points": [4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Sounds terrifying...",
                     "personalities": ["Quiet"],
                     "points": [2]
                 }
@@ -1249,12 +1249,12 @@
             "question": "Have you ever upset a friend when you were just kidding around?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, I got carried away.",
                     "personalities": ["Impish", "Naive"],
                     "points": [2, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "No, I try to mind others.",
                     "personalities": ["Calm"],
                     "points": [4]
                 }
@@ -1281,15 +1281,15 @@
             ]
         },
         {
-            "question": "Do you find yourself jumping to the wrong conclusion a lot of the time?",
+            "question": "What do you do when you hear a friend is talking negatively about you?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Get angry!",
                     "personalities": ["Hasty", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Approach them for a talk.",
                     "personalities": ["Docile", "Quiet"],
                     "points": [2, 2]
                 }
@@ -1299,7 +1299,7 @@
             "question": "Are you a rebel at heart?",
             "choices": [
                 {
-                    "answer": "Totally!",
+                    "answer": "Haha, totally!",
                     "personalities": ["Sassy"],
                     "points": [4]
                 },
@@ -1314,12 +1314,12 @@
             "question": "When walking in a group, do you tend to be the one at the front?",
             "choices": [
                 {
-                    "answer": "Of course!",
+                    "answer": "Of course I lead!",
                     "personalities": ["Sassy", "Lonely"],
                     "points": [4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "I'd rather stay at the back.",
                     "personalities": ["Calm", "Quirky"],
                     "points": [4, 2]
                 }
@@ -1384,12 +1384,12 @@
             "question": "You don't get bothered by noise and ruckus nearby, do you?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Noise doesn't bother me.",
                     "personalities": ["Relaxed", "Bold"],
                     "points": [2, 4]
                 },
                 {
-                    "answer": "Not at all!",
+                    "answer": "I can't work if there's noise!",
                     "personalities": ["Hasty", "Lonely"],
                     "points": [2, 4]
                 }
@@ -1411,15 +1411,15 @@
             ]
         },
         {
-            "question": "Do you like being the center of attention?",
+            "question": "Would you rather be the center of attention or a wallflower?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "The center of attention!",
                     "personalities": ["Sassy", "Lonely"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "A wallflower.",
                     "personalities": ["Relaxed"],
                     "points": [2]
                 }
@@ -1429,27 +1429,27 @@
             "question": "Do you have lots of stuff you bought, thinking it was all cool, but don't use anymore?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "I do sometimes hoard.",
                     "personalities": ["Hasty", "Quirky", "Rash"],
                     "points": [2, 4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "I only keep what I need.",
                     "personalities": ["Quiet"],
                     "points": [2]
                 }
             ]
         },
         {
-            "question": "Have you had any hobbies for a long time?",
+            "question": "When did you discover your current hobbies?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Since I was a child.",
                     "personalities": ["Hardy"],
                     "points": [4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Just when I became older.",
                     "personalities": ["Hasty", "Quirky"],
                     "points": [2, 4]
                 }
@@ -1459,12 +1459,12 @@
             "question": "Do you often cancel plans to meet others at the last second?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "If something comes up.",
                     "personalities": ["Quirky", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "I stick to plans.",
                     "personalities": ["Calm"],
                     "points": [2]
                 }
@@ -1491,15 +1491,15 @@
             ]
         },
         {
-            "question": "Do you think that lies are sometimes necessary?",
+            "question": "Do you think that lies are sometimes necessary and good?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Yes, lying sometimes helps.",
                     "personalities": ["Quiet", "Bold"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Lies are always bad.",
                     "personalities": ["Brave"],
                     "points": [4]
                 },
@@ -1566,15 +1566,15 @@
             ]
         },
         {
-            "question": "Do you often forget to lock the door when you go out?",
+            "question": "Do you forget to lock the door when you go out?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "Sometimes....",
                     "personalities": ["Rash", "Bold"],
                     "points": [4, 2]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "Never!",
                     "personalities": ["Hardy"],
                     "points": [2]
                 }
@@ -1584,12 +1584,12 @@
             "question": "Have you ever accidentally revealed a personal secret that someone shared with you?",
             "choices": [
                 {
-                    "answer": "Yes.",
+                    "answer": "I do have loose lips...",
                     "personalities": ["Lonely", "Rash"],
                     "points": [4, 4]
                 },
                 {
-                    "answer": "No.",
+                    "answer": "All secrets are safe with me.",
                     "personalities": ["Hardy"],
                     "points": [2]
                 }
